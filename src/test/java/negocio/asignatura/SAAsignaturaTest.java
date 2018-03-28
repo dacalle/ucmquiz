@@ -1,6 +1,6 @@
 package negocio.asignatura;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 import java.util.List;
 
@@ -14,7 +14,7 @@ public class SAAsignaturaTest {
 		SAAsignatura saa = new SAAsignaturaImp();
 		lista = saa.readAll();
 		
-		assertEquals(null, lista);
+		assertNotEquals(null, lista);
 	}
 	
 }
